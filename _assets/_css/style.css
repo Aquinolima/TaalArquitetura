@@ -1,0 +1,93 @@
+/*---------------   TAGS -----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: whitesmoke;
+    min-height: 120px;
+    padding: 10px;
+}
+
+footer {
+    background-color: whitesmoke;
+    clear: both;
+    min-height: 250px;
+}
+
+/*---------------   CLASS -----------------------*/
+
+.container{
+    width:100%;
+    margin:auto;
+    min-width:600px;
+    max-width:2000px;
+}
+
+.logo{
+    float: left;
+
+}
+
+.menu{
+    float: right;
+}
+
+.button{
+
+}
+
+/*---------------   ID -----------------------*/
+
+
+
+#banner {
+    background-color: #2E879B;
+    min-height: 600px;
+    clear: both;
+}
+
+#orcamento {
+    background-color: whitesmoke;
+    min-height: 600px;
+}
+
+#quemSomos {
+    background-color: #2E879B;
+    min-height: 650px;
+    
+}
+
+#quemEsq {
+    width: 50%;
+    float: left;
+}
+
+#quemDir {
+    width: 50%;
+    float: right;
+}
+
+#projetosNao {
+       min-height: 600px ;
+}
+
+#proNaoEsq {
+    background-color: #FE7E01;
+    width: 50%;
+    float: left;
+}
+
+#proNaoDir {
+    background-color: whitesmoke;
+    width: 50%;
+    float: right;
+}
