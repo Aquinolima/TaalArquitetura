@@ -1,0 +1,50 @@
+/* START - Budget */
+
+#budget {
+    padding: 30px 73px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#budget-info {
+    padding: 30px 73px;
+    text-align: center;
+}
+
+#budget-info h4 {
+    color: #4B4542;
+    padding-top: 20px;
+    margin-left: 200px;
+}
+
+#budget-info h5 {
+    color: #FE7E01;
+    margin-left: 225px;
+    position: absolute;
+}
+
+.budget-cards {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+#budget-card-esq {
+    margin-left: auto;
+}
+
+#budget-card-dir {
+    margin-right: auto;
+}
+
+.budget-cards img {
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.budget-cards p {
+    color: #4B4542;
+}
+
+/* END - Budget */

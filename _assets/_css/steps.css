@@ -1,0 +1,91 @@
+/* START - Steps */
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+#steps {
+    text-align: center;
+    background-color: #FE7E01;
+}
+
+#steps-left {
+    margin-left: -30px;
+    width: 520px;
+    height: auto;
+    background-image: url(../_img/about_2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    margin-right: -40px;
+}
+
+#steps-right {
+    height: auto;
+    padding-top: 30px;
+    margin-right: auto;
+    text-align: center;
+}
+
+#steps-info-box {
+  
+    min-width: 600px;
+    max-width: 1200px;
+    display: flex;
+}
+
+#steps-info {
+    margin: -30px -1600px 15px -10px;
+    background-color: #ffffff;
+    padding: 50px 1600px 0px 10px;
+}
+
+#steps-info h4 {
+    font-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#steps-info h5 {
+    color: #FE7E01;
+    padding-left: 60px;
+    text-align: left;
+}
+
+#steps-info p {
+    color: #1E1713;
+    text-align: justify;
+    height: auto;
+    font-size: 20px;
+    padding: 30px;
+}
+
+#steps-card {
+    flex: 1;
+}
+
+.steps-cards {
+    background-color: #2E879B;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 5px 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.steps-cards img {
+    margin-bottom: 10px;
+}
+
+.steps-cards h6 {
+    color: #FE7E01;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.steps-cards p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* END - Steps */

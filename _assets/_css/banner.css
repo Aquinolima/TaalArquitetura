@@ -1,0 +1,65 @@
+/* START - Banner */
+
+#banner {
+    background-color: #2E879B;
+}
+
+#banner h1 {
+    color: #ffffff;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row;
+}
+
+#cont-banner {
+    background-image: url(../_img/banner_1filtro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 73px;
+    text-align: center;
+}
+
+.row {
+    flex-direction: row;
+    margin: auto;
+}
+
+.banner-cards {
+    background-color: rgba(0, 0, 0, .55);
+    width: 350px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+.banner-cards-info {
+    display: inline-block;
+    padding: 5px;
+}
+
+.banner-cards-info img {
+    float: left;
+    margin-right: 10px;
+}
+
+.banner-cards-info h5 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #D4D4D4
+}
+
+.banner-cards p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #D4D4D4
+}
+
+/* END - Banner */

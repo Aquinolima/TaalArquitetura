@@ -1,0 +1,33 @@
+/* START - Gallery */
+#gallery {
+    background-color: #2E879B;
+
+}
+
+#gallery-box {
+    width: 100%;
+    min-width: 600px;
+    max-width: 1200px;
+    display: flex;
+}
+
+#gallery-info {
+    padding: 60px 0 70px 150px;
+    text-align: center;
+}
+
+#gallery-info h4 {
+    color: #ffffff;
+    margin-right: auto;
+    padding: 25px 90px 0 30px;
+    text-align: left;
+}
+
+#gallery-info h5 {
+    color: #FE7E01;
+    position: absolute;
+    padding-left: 60px;
+}
+
+
+/* END - Gallery */

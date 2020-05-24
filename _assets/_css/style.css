@@ -1,93 +1,47 @@
-/*---------------   TAGS -----------------------*/
-
+/* START - Reset */
 * {
     margin: 0;
-    padding: 0;
-    list-style: none;
     text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000000;
 }
 
-body {
-    background-color: lightgrey;
+/* END - Reset */
+/* START - Base */
+
+h1 {
+    font-size: 70px;
 }
 
-header {
-    background-color: whitesmoke;
-    min-height: 120px;
-    padding: 10px;
+h2 {
+    font-size: 58px;
 }
 
-footer {
-    background-color: whitesmoke;
-    clear: both;
-    min-height: 250px;
+h3 {
+    font-size: 48px;
 }
 
-/*---------------   CLASS -----------------------*/
-
-.container{
-    width:100%;
-    margin:auto;
-    min-width:600px;
-    max-width:2000px;
+h4 {
+    font-size: 35px;
 }
 
-.logo{
-    float: left;
-
+h5 {
+    font-size: 24px;
 }
 
-.menu{
-    float: right;
+h6 {
+    font-size: 21px;
 }
 
-.button{
-
+p {
+    font-size: 18px;
 }
 
-/*---------------   ID -----------------------*/
-
-
-
-#banner {
-    background-color: #2E879B;
-    min-height: 600px;
-    clear: both;
+.container {
+    width: 100%;
+    min-width: 600px;
+    max-width: 1500px;
+    display: flex;
 }
 
-#orcamento {
-    background-color: whitesmoke;
-    min-height: 600px;
-}
-
-#quemSomos {
-    background-color: #2E879B;
-    min-height: 650px;
-    
-}
-
-#quemEsq {
-    width: 50%;
-    float: left;
-}
-
-#quemDir {
-    width: 50%;
-    float: right;
-}
-
-#projetosNao {
-       min-height: 600px ;
-}
-
-#proNaoEsq {
-    background-color: #FE7E01;
-    width: 50%;
-    float: left;
-}
-
-#proNaoDir {
-    background-color: whitesmoke;
-    width: 50%;
-    float: right;
-}
+/* END - Base */

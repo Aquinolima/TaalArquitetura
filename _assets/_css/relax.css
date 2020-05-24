@@ -1,0 +1,47 @@
+#relax {
+    background-color: #2E879B;
+}
+
+#relax h1 {
+    color: #ffffff;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row;
+}
+
+#cont-relax {
+    background-image: url(../_img/Relex.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 73px;
+    text-align: center;
+    width: auto;
+    height: 700px;
+}
+
+#relax-box {
+    width: 100%;
+    min-width: 600px;
+    max-width: 1200px;
+    display: flex;
+}
+
+#relax-info {
+    padding: 60px 30px;
+}
+
+#relax-info h4 {
+    color: #ffffff;
+    margin-right: auto;
+    padding: 25px 90px 0 0px;
+    text-align: left;
+    font-size: 50px;
+}
+
+#relax-info h5 {
+    color: #FE7E01;
+    position: absolute;
+    font-size: 30px;
+}
