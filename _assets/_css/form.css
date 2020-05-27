@@ -1,0 +1,95 @@
+/*  FORM */
+
+#form {
+    background-color: #2E879B;
+    height: auto;
+}
+
+#form-info {
+    margin: 45px auto 30px 150px;
+}
+
+#form-info h2 {
+    color: #FE7E01;
+    font-size: 58px;
+}
+
+#form-info h4 {
+    font-size: 34px;
+    color: #ffffff;
+}
+
+#form-info p {
+    color: #ffffff;
+}
+
+#form-itens-list {
+
+    border: 5px solid #FE7E01;
+    margin: 10px auto 30px 150px;
+}
+
+#form-itens-list p {
+    color: #ffffff;
+}
+
+#form-pref-checkbox {
+    color: #ffffff;
+    min-width: 30px;
+    width: auto;
+}
+
+#form-pref-checkbox div {
+    color: #ffffff;
+}
+
+#form-pref-radio {
+    color: #ffffff;
+    min-width: 30px;
+    width: auto;
+}
+
+#form-pref-radio div {
+    color: #ffffff;
+}
+
+#form-img {
+    margin: auto 0;
+}
+
+#form-basic {
+    width: 470px;
+}
+
+#form-basic input {
+    width: 100%;
+    height: 60px;
+}
+
+#form-phonecontacts {
+    width: 470px;
+    margin: 0;
+}
+
+#form-phonecontacts input {
+    width: 100%;
+    height: 60px;
+}
+
+div#input-tel {
+    margin-left: 0px;
+    width: 100%;
+}
+
+div#input-cel {
+    margin-right:0;
+    width: 100%;
+}
+
+textarea#form-msg {
+    width: 100%;
+}
+
+div#form-right {
+    margin: auto 0 auto 50px;
+}
