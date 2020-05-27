@@ -3,10 +3,24 @@
 #form {
     background-color: #2E879B;
     height: auto;
+    position: relative;
+}
+
+#form::before {
+    content: '';
+    background-color: #FE7E01;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
 }
 
 #form-info {
     margin: 45px auto 30px 150px;
+    position: relative;
+    padding-left: 30px;
 }
 
 #form-info h2 {
@@ -24,13 +38,14 @@
 }
 
 #form-itens-list {
-
-    border: 5px solid #FE7E01;
     margin: 10px auto 30px 150px;
+    padding-left: 30px;
 }
 
 #form-itens-list p {
     color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 #form-pref-checkbox {
@@ -39,8 +54,14 @@
     width: auto;
 }
 
+#form-pref-checkbox label {
+    color: #ffffff;
+    font-size: 20px;
+}
+
 #form-pref-checkbox div {
     color: #ffffff;
+    padding-top: 15px;
 }
 
 #form-pref-radio {
@@ -51,6 +72,12 @@
 
 #form-pref-radio div {
     color: #ffffff;
+    padding: 15px 0 0 20px;
+}
+
+#form-pref-radio label {
+    color: #ffffff;
+    font-size: 20px;
 }
 
 #form-img {
@@ -62,7 +89,7 @@
 }
 
 #form-basic input {
-    width: 100%;
+    width: calc(100% - 55px);
     height: 60px;
 }
 
@@ -72,24 +99,185 @@
 }
 
 #form-phonecontacts input {
-    width: 100%;
+    width: calc(100% - 55px);
     height: 60px;
+
 }
 
 div#input-tel {
-    margin-left: 0px;
     width: 100%;
 }
 
 div#input-cel {
-    margin-right:0;
     width: 100%;
 }
 
 textarea#form-msg {
-    width: 100%;
+    width: calc(100% - 55px);
 }
 
 div#form-right {
-    margin: auto 0 auto 50px;
+    margin: auto 0;
+    position: relative;
+
+}
+
+#form-left {
+    position: relative;
+}
+
+#form-left input {
+    background-color: rgba(255, 255, 255, .15);
+    color: #E5E5E5;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+#form-left input::placeholder {
+    color: #E5E5E5;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+#form-left textarea::placeholder {
+    color: #FE7E01;
+    font-size: 22px;
+    padding: 20px 0 0 30px;
+}
+
+#form-button-submit input {
+    width: 215px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #FE7E01;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#form-button-submit input:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* checkbox style */
+
+input[type=checkbox]+label {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+
+
+input[type=checkbox]+label:before {
+    content: "\2714";
+    border: 1px solid #BCE0FD;
+    background-color: #ffffff;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: auto;
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+input[type=checkbox]+label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked+label:before {
+    background-color: #ffffff;
+    color: #FE7E01;
+    font-size: 22px;
+    font-align: center;
+}
+
+
+/* radio style */
+
+.radio-time {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    padding-top: 8px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-time input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 1px solid #BCE0FD;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-time:hover input~.checkmark {
+    background-color: #BCE0FD;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-time input:checked~.checkmark {
+    border: 1px solid #BCE0FD;
+    background-color: #ffffff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-time input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-time .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FE7E01;
 }

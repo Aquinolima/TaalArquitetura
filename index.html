@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="_assets/_css/carousel.css">
     <link rel="stylesheet" href="_assets/_css/relax.css">
+    <link rel="stylesheet" href="_assets/_css/form.css">
+    <link rel="stylesheet" href="_assets/_css/footer.css">
 
 </head>
 
@@ -129,6 +131,7 @@
         <div class="container row">
 
             <div id="about-left" class="container row">
+                
             </div>
             <div class="about-info">
 
@@ -186,25 +189,25 @@
 
 
             <div id="steps-left" class="container">
+               
             </div>
 
             <div id="steps-right" class="container column-nowrap">
-                <div id="steps-info-box">
-                    <div id="steps-info">
-                        <div>
-                            <h5>Projetos não!</h5>
-                        </div>
-                        <div>
-                            <h4>Experiência de transformação!</h4>
-                        </div>
-                        <div>
-                            <p>Nós não vêmos a realização dos projetos como construções e reformas. Nossa filosofia é
-                                realizar
-                                sonhos.
-                                E tudo começa com um traço!</p>
-                        </div>
+                <div id="steps-info">
+                    <div>
+                        <h5>Projetos não!</h5>
+                    </div>
+                    <div>
+                        <h4>Experiência de transformação!</h4>
+                    </div>
+                    <div>
+                        <p>Nós não vêmos a realização dos projetos como construções e reformas. Nossa filosofia é
+                            realizar
+                            sonhos.
+                            E tudo começa com um traço!</p>
                     </div>
                 </div>
+
 
                 <div id="steps-cards" class="container row">
 
@@ -366,8 +369,167 @@
 
     <!-- End Relax -->
 
+    <!--Start Form-->
 
+    <section id="form">
+
+        <div class="container row">
+            <div id="form-info">
+                <h2>CADASTRE-SE</h2>
+                <h4>Preencha os espaços para realizar um orçamento.</h4>
+                <p>Insira seus dados nos campos correspondentes.</p>
+            </div>
+        </div>
+
+        <div id="form-itens" class="container row">
+
+            <div id="form-itens-list">
+                <form action="" method="" class="container row">
+                    <div id="form-left">
+                        <div id="form-basic" class="container column-nowrap">
+                            <div id="input-email"><input type="email" name="email" id="form-email"
+                                    placeholder="seuemail@email.com" style="font-size: 20px; color:#ffffff;"></div>
+                            <div id="input-name"><input type="text" name="name" id="form-name"
+                                    placeholder="Nome completo" style="font-size: 20px; color:#ffffff;">
+                            </div>
+                            <div id="input-address"><input type="text" name="address" id="form-address"
+                                    placeholder="Endereço, n° - Cidade, Estado" style="font-size: 20px; color:#ffffff;"></div>
+                        </div>
+                        <div id="form-phonecontacts" class="container row">
+                            <div id="input-cel"><input type="tel" name="cel" id="form-cel" placeholder="Celular:(00) 00000-0000"
+                                style="font-size: 20px; color:#ffffff;"></div>
+                            <div id="input-tel"><input type="tel" name="tel" id="form-tel" placeholder="Telefone:(00) 0000-0000" 
+                                style="font-size: 20px; color:#ffffff;"></div>
+                        </div>
+
+                        <textarea name="msg" id="form-msg" cols="30" rows="10"
+                            placeholder="Descreva seu projeto..." style="font-size: 20px; color:#000000;"></textarea>
+
+                        <div id="form-msg"><span></span></div>
+                        <div id="form-button-submit">
+                            <input type="submit" value="ENVIAR">
+                        </div>
+                    </div>
+
+
+                    <div id="form-right">
+
+                        <div class="container column-nowrap"">
+
+                            <div id=" form-pref-info">
+                            <div>
+                                <p>Preferências de contato.</p>
+                            </div>
+
+                            <div id="form-pref-and-radio" class="container row">
+                                <div id="form-pref-checkbox" class="container column-nowrap">
+                                    <div>
+                                        <input type="checkbox" name="email" id="form-checkbox-email"
+                                            placeholder="E-mail">
+                                        <label for="form-checkbox-email">E-mail</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="telefone" id="form-checkbox-telefone"
+                                            placeholder="Telefone">
+                                        <label for="form-checkbox-telefone">Telefone</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="whatsApp" id="form-checkbox-whatsapp"
+                                            placeholder="Whats-App" checked>
+                                        <label for="form-checkbox-whatsapp">Whats-App</label>
+                                    </div>
+                                </div>
+
+                                <div id="form-pref-radio" class="container column-nowrap">
+                                    <div>
+                                        <label class="radio-time">Manhã
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-time">Tarde
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="radio-time">Noite
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="form-img">.
+                            <img src="_assets/_icons/icon_msg.png" alt="envelope">
+                        </div>
+
+                    </div>
+            </div>
+            </form>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Form-->
+
+
+    <!-- Start Footer-->
+
+    <footer>
+        <div id="footer-detail"></div>
+
+        <div class="container row">
+
+            <div id="footer-logo">
+                <a href="#" class="anchor">
+                    <img src="_assets/_img/TAAL-ARQUITETURA-LOGO 2@2x.png" alt="logo_TAAL">
+                </a>
+            </div>
+            <div id="footer-company">
+                <p>Empresa</p>
+                <div id="footer-detail-company"></div>
+
+                <ul>
+                    <li><a href="index.html" class="anchor">Home</a></li>
+                    <li><a href="#" class="anchor">Portfólio</a></li>
+                    <li><a href="#" class="anchor">Sobre nós</a></li>
+                    <li><a href="#" class="anchor">Contato</a></li>
+                </ul>
+            </div>
+            <div id="footer-contact">
+                <p>Contato</p>
+                <div id="footer-detail-contact"></div>
+                <ul>
+                    <li>
+                        <p>+55 (11) 34280957</p>
+                    </li>
+                    <li>
+                        <p>+55 (11) 9 8571-8918</p>
+                    </li>
+                    <li>
+                        <p>email: taalarquitetura@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer-accounts">
+                <p>Term & privacy | Certificates & awards | My account</p>
+
+                <img src="_assets/_icons/icon_logo_twitter.png" alt="twitter">
+                <img src="_assets/_icons/icon_logo_youtube.png" alt="youtube">
+                <img src="_assets/_icons/icon_logo_linkedin.png" alt="linkedin">
+                <img src="_assets/_icons/icon_logo_pin.png" alt="pinterest">
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer-->
+    
     <script type="text/javascript" src="_assets/_script/carousel.js"></script>
+    <script type="text/javascript" src="_assets/_script/script.js"></script>
 
 </body>
 

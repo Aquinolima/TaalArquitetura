@@ -6,6 +6,18 @@
 #steps {
     text-align: center;
     background-color: #FE7E01;
+    position: relative;
+}
+
+#steps::before {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* bottom: 55%; */
+    left: 48.8%;
+    height: 237px;
 }
 
 #steps-left {
@@ -17,26 +29,25 @@
     background-attachment: scroll;
     background-position: center;
     margin-right: -40px;
+    z-index: 2;
 }
 
 #steps-right {
     height: auto;
-    padding-top: 30px;
     margin-right: auto;
     text-align: center;
 }
 
-#steps-info-box {
-  
-    min-width: 600px;
-    max-width: 1200px;
-    display: flex;
-}
-
 #steps-info {
-    margin: -30px -1600px 15px -10px;
+    height: 237px;
+    padding-top: 60px;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
     background-color: #ffffff;
-    padding: 50px 1600px 0px 10px;
+    margin-bottom: 15px;
+    max-height: calc(237px - 60px);
+    margin-left: -15px;
 }
 
 #steps-info h4 {
