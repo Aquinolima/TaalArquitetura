@@ -72,7 +72,7 @@
 
 #form-pref-radio div {
     color: #ffffff;
-    padding: 15px 0 0 20px;
+    padding: 6px 20px;
 }
 
 #form-pref-radio label {
@@ -163,10 +163,17 @@ div#form-right {
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    transition: 1s;
 }
 
 #form-button-submit input:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 /* checkbox style */
@@ -280,4 +287,14 @@ input[type=checkbox]:checked+label:before {
     height: 24px;
     border-radius: 50%;
     background: #FE7E01;
+}
+
+
+/* Validação form */
+
+#form-left span{
+    color: #FE7E01;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 15px;
 }

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-Br">
 
@@ -5,7 +9,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAAL Arquitetura</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 
     <script type="text/javascript" src="_assets/_script/carousel.js"></script>
@@ -21,6 +29,7 @@
     <link rel="stylesheet" href="_assets/_css/relax.css">
     <link rel="stylesheet" href="_assets/_css/form.css">
     <link rel="stylesheet" href="_assets/_css/footer.css">
+    
 
 </head>
 
@@ -31,19 +40,19 @@
     <header>
         <div class="container row">
 
-            <a href="#" class="anchor"><img src="_assets/_img/TAAL ARQUITETURA LOGO.png" alt="logo_TAAL"></a>
+            <a href="index.php" class="anchor"><img src="_assets/_img/TAAL ARQUITETURA LOGO.png" alt="logo_TAAL"></a>
             <nav>
                 <ul id="navbar-list">
-                    <li><a href="index.html" class="anchor">Home</a></li>
-                    <li><a href="#" class="anchor">Portfólio</a></li>
-                    <li> <a href="#" class="anchor">Sobre nós</a></li>
-                    <li><a href="#" class="anchor">Contato</a></li>
-                    <li> <a href="#" class="anchor"> &#x2706; whatsApp +5511985718918 </a></li>
+                    <li><a href="index.php" class="anchor">Home</a></li>
+                    <li><a href="#gallery" class="anchor">Portfólio</a></li>
+                    <li> <a href="#about" class="anchor">Sobre nós</a></li>
+                    <li><a href="#footer-detail" class="anchor">Contato</a></li>
+                    <li> &#x2706; whatsApp +5511985718918 </li>
                 </ul>
 
             </nav>
             <div id="button">
-                <a href="#" class="anchor"><button class="button" type="button">Fazer orçamento</button></a>
+                <a href="#form" class="anchor"><button class="button" type="button">Fazer orçamento</button></a>
             </div>
         </div>
         <div id="header-detail"></div>
@@ -131,7 +140,7 @@
         <div class="container row">
 
             <div id="about-left" class="container row">
-                
+
             </div>
             <div class="about-info">
 
@@ -189,7 +198,7 @@
 
 
             <div id="steps-left" class="container">
-               
+
             </div>
 
             <div id="steps-right" class="container column-nowrap">
@@ -384,7 +393,7 @@
         <div id="form-itens" class="container row">
 
             <div id="form-itens-list">
-                <form action="" method="" class="container row">
+                <form action="_assets/_php/form.php" method="POST" class="container row">
                     <div id="form-left">
                         <div id="form-basic" class="container column-nowrap">
                             <div id="input-email"><input type="email" name="email" id="form-email"
@@ -393,19 +402,29 @@
                                     placeholder="Nome completo" style="font-size: 20px; color:#ffffff;">
                             </div>
                             <div id="input-address"><input type="text" name="address" id="form-address"
-                                    placeholder="Endereço, n° - Cidade, Estado" style="font-size: 20px; color:#ffffff;"></div>
+                                    placeholder="Endereço, n° - Cidade, Estado" style="font-size: 20px; color:#ffffff;">
+                            </div>
                         </div>
                         <div id="form-phonecontacts" class="container row">
-                            <div id="input-cel"><input type="tel" name="cel" id="form-cel" placeholder="Celular:(00) 00000-0000"
-                                style="font-size: 20px; color:#ffffff;"></div>
-                            <div id="input-tel"><input type="tel" name="tel" id="form-tel" placeholder="Telefone:(00) 0000-0000" 
-                                style="font-size: 20px; color:#ffffff;"></div>
+                            <div id="input-cel"><input type="tel" name="cel" id="form-cel"
+                                    placeholder="Cel:(00) 00000-0000" style="font-size: 20px; color:#ffffff;"></div>
+                            <div id="input-tel"><input type="tel" name="tel" id="form-tel"
+                                    placeholder="Tel:(00) 0000-0000" style="font-size: 20px; color:#ffffff;"></div>
                         </div>
 
-                        <textarea name="msg" id="form-msg" cols="30" rows="10"
-                            placeholder="Descreva seu projeto..." style="font-size: 20px; color:#000000;"></textarea>
+                        <textarea name="msg" id="form-msg" cols="30" rows="10" placeholder="Descreva seu projeto..."
+                            style="font-size: 20px; color:#000000;"></textarea>
 
-                        <div id="form-msg"><span></span></div>
+                        <?php 
+
+if(isset($_SESSION['msg']))
+    echo $_SESSION['msg'];
+    unset ($_SESSION['msg']);
+
+?>
+
+
+
                         <div id="form-button-submit">
                             <input type="submit" value="ENVIAR">
                         </div>
@@ -424,18 +443,18 @@
                             <div id="form-pref-and-radio" class="container row">
                                 <div id="form-pref-checkbox" class="container column-nowrap">
                                     <div>
-                                        <input type="checkbox" name="email" id="form-checkbox-email"
-                                            placeholder="E-mail">
+                                        <input type="checkbox" name="check_email" id="form-checkbox-email"
+                                            placeholder="E-mail" value="email">
                                         <label for="form-checkbox-email">E-mail</label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" name="telefone" id="form-checkbox-telefone"
-                                            placeholder="Telefone">
+                                        <input type="checkbox" name="check_tel" id="form-checkbox-telefone"
+                                            placeholder="Telefone" value="telefone">
                                         <label for="form-checkbox-telefone">Telefone</label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" name="whatsApp" id="form-checkbox-whatsapp"
-                                            placeholder="Whats-App" checked>
+                                        <input type="checkbox" name="check_whats" id="form-checkbox-whatsapp"
+                                            placeholder="Whats-App" value="whatsapp" checked>
                                         <label for="form-checkbox-whatsapp">Whats-App</label>
                                     </div>
                                 </div>
@@ -443,19 +462,19 @@
                                 <div id="form-pref-radio" class="container column-nowrap">
                                     <div>
                                         <label class="radio-time">Manhã
-                                            <input type="radio" name="radio">
+                                            <input type="radio" name="radio" value="Manhã">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div>
                                         <label class="radio-time">Tarde
-                                            <input type="radio" name="radio">
+                                            <input type="radio" name="radio" value="Tarde">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div>
                                         <label class="radio-time">Noite
-                                            <input type="radio" checked="checked" name="radio">
+                                            <input type="radio" checked="checked" name="radio" value="Noite">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -495,10 +514,10 @@
                 <div id="footer-detail-company"></div>
 
                 <ul>
-                    <li><a href="index.html" class="anchor">Home</a></li>
-                    <li><a href="#" class="anchor">Portfólio</a></li>
-                    <li><a href="#" class="anchor">Sobre nós</a></li>
-                    <li><a href="#" class="anchor">Contato</a></li>
+                    <li><a href="index.php" class="anchor">Home</a></li>
+                    <li><a href="#gallery" class="anchor">Portfólio</a></li>
+                    <li><a href="#about" class="anchor">Sobre nós</a></li>
+                    <li><a href="##footer-detail" class="anchor">Contato</a></li>
                 </ul>
             </div>
             <div id="footer-contact">
@@ -517,19 +536,25 @@
                 </ul>
             </div>
             <div id="footer-accounts">
-                <p>Term & privacy | Certificates & awards | My account</p>
+                <p>Term & privacy | Certificates & awards | <a id="myaccount" href="login.php" class="anchor"> My account </a>
+                </p>
 
-                <img src="_assets/_icons/icon_logo_twitter.png" alt="twitter">
-                <img src="_assets/_icons/icon_logo_youtube.png" alt="youtube">
-                <img src="_assets/_icons/icon_logo_linkedin.png" alt="linkedin">
-                <img src="_assets/_icons/icon_logo_pin.png" alt="pinterest">
+                <a href="https://twitter.com/" class="anchor"><img src="_assets/_icons/icon_logo_twitter.png"
+                        alt="twitter"></a>
+                <a href="https://www.youtube.com/" class="anchor"><img src="_assets/_icons/icon_logo_youtube.png"
+                        alt="youtube"></a>
+                <a href="https://www.linkedin.com/" class="anchor"><img src="_assets/_icons/icon_logo_linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://br.pinterest.com/" class="anchor"><img src="_assets/_icons/icon_logo_pin.png"
+                        alt="pinterest"></a>
             </div>
         </div>
     </footer>
     <!-- End Footer-->
-    
+
     <script type="text/javascript" src="_assets/_script/carousel.js"></script>
     <script type="text/javascript" src="_assets/_script/script.js"></script>
+    <script type="text/javascript" src="_assets/_script/myaccount.js"></script>
 
 </body>
 

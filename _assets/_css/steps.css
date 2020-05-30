@@ -82,6 +82,18 @@
     padding: 20px 20px 5px 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    transition: 1s;
+}
+
+.steps-cards:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+    
+
 }
 
 .steps-cards img {

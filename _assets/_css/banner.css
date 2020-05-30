@@ -7,7 +7,6 @@
 #banner h1 {
     color: #ffffff;
     margin: auto;
-    font-family: 'Times New Roman', Times, serif;
     flex-direction: row;
 }
 
@@ -36,6 +35,16 @@
     padding: 15px;
     border-radius: 15px;
     color: #ffffff;
+    transition: 1s;
+}
+
+.banner-cards:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .banner-cards-info {

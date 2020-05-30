@@ -1,0 +1,58 @@
+/* START - myaccount */
+#myaccount {
+    background-color: #2E879B;
+
+}
+
+#account-box {
+    width: 100%;
+    min-width: 600px;
+    max-width: 1200px;
+    display: flex;
+}
+
+#account-info {
+    padding: 60px 0 70px 150px;
+    text-align: center;
+}
+
+#account-info h4 {
+    color: #ffffff;
+    margin-right: auto;
+    padding: 25px 90px 0 30px;
+    text-align: left;
+}
+
+#account-info h5 {
+    color: #FE7E01;
+    position: absolute;
+    padding-left: 60px;
+}
+
+#account-info p{
+    color: #000000;
+    font-size: 18px;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+.account-p{
+    color: #000000;
+    background-color: #ffffff;
+    margin: 15px;
+    /* background: gray; */
+    border-style: solid;
+    border-color: #FE7E01;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #000000;
+    transition: 1s;
+}
+
+.account-p:hover {
+    transform: scale(1.1);
+    transition: 1s;
+ 
+}
+
+/* END - myaccount */
